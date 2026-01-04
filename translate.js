@@ -14,7 +14,7 @@ function isChinese(str) {
 }
 
 const isZh = isChinese(text);
-const prompt = `你是翻译专家。将以下${isZh ? "中文翻译成英文" : "英文翻译成中文"}，只输出译文：\n\n${text}`;
+const prompt = `你是翻译专家。将以下${isZh ? "简体中文翻译成英文" : "英文翻译成简体中文"}，只输出译文：\n\n${text}`;
 
 const res = await axios.post(apiBase, {
   model: model,
