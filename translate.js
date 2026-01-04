@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const text = popclip.input.text;
-const { apiKey, apiBase, model, promptZhToEn, promptEnToZh } = popclip.options;
+const { apiKey, apiBase, model, promptZhToEn, promptEnToZh, temperature, timeout } = popclip.options;
 
 if (!apiKey) {
   return "❌ 请配置 API Key";
@@ -20,13 +20,13 @@ const prompt = `${promptTemplate}\n\n${text}`;
 const res = await axios.post(apiBase, {
   model: model,
   messages: [{ role: "user", content: prompt }],
-  temperature: 0.3
+  temperature: parseFloat(temperature) || 0.3
 }, {
   headers: {
     "Content-Type": "application/json",
     "Authorization": `Bearer ${apiKey}`
   },
-  timeout: 30000
+  timeout: parseInt(timeout) || 30000
 });
 
 return res.data.choices[0].message.content.trim();
