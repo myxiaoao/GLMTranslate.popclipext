@@ -35,7 +35,6 @@ mkdir -p "$EXTENSION_PATH"
 
 # 复制必要文件
 cp Config.json "$EXTENSION_PATH/"
-cp icon.svg "$EXTENSION_PATH/"
 cp translate.js "$EXTENSION_PATH/"
 
 echo "✓ 插件已打包到: $EXTENSION_PATH"

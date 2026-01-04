@@ -3,6 +3,7 @@
   "identifier": "com.example.popclip.glm-translate",
   "description": "使用 GLM 模型进行中英互译",
   "popclipVersion": 4586,
+  "entitlements": ["network"],
   "options": [
     {
       "identifier": "apiKey",
@@ -28,7 +29,7 @@
   "actions": [
     {
       "title": "Instant Translate",
-      "icon file": "icon.svg",
+      "icon": "symbol:character.bubble",
       "requirements": ["text"],
       "after": "show-result",
       "javascript file": "translate.js"
