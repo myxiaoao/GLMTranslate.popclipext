@@ -1,0 +1,37 @@
+{
+  "name": "GLM Translate",
+  "identifier": "com.example.popclip.glm-translate",
+  "description": "使用 GLM 模型进行中英互译",
+  "popclipVersion": 4586,
+  "options": [
+    {
+      "identifier": "apiKey",
+      "label": "API Key",
+      "type": "string",
+      "description": "智谱 AI API Key"
+    },
+    {
+      "identifier": "apiBase",
+      "label": "API Base URL",
+      "type": "string",
+      "defaultValue": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+      "description": "API 地址"
+    },
+    {
+      "identifier": "model",
+      "label": "Model",
+      "type": "string",
+      "defaultValue": "glm-4-flash",
+      "description": "模型名称"
+    }
+  ],
+  "actions": [
+    {
+      "title": "Instant Translate",
+      "icon file": "icon.svg",
+      "requirements": ["text"],
+      "after": "show-result",
+      "javascript file": "translate.js"
+    }
+  ]
+}
