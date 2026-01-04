@@ -1,6 +1,7 @@
 {
   "name": "GLM Translate",
   "identifier": "com.example.popclip.glm-translate",
+  "version": 1,
   "description": "使用 GLM 模型进行中英互译",
   "popclipVersion": 4586,
   "entitlements": ["network"],

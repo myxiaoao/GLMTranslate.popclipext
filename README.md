@@ -10,6 +10,13 @@
 
 ## 安装
 
+### 方式一：从 Releases 下载（推荐）
+
+1. 前往 [Releases](https://github.com/myxiaoao/GLMTranslate.popclipext/releases) 下载最新版本的 `GLM_Translate.popclipextz`
+2. 双击下载的文件即可安装到 PopClip
+
+### 方式二：手动打包
+
 1. 运行打包脚本：
    ```bash
    ./build.sh
