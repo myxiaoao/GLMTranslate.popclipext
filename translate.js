@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const text = popclip.input.text;
-const { apiKey, apiBase, model } = popclip.options;
+const { apiKey, apiBase, model, promptZhToEn, promptEnToZh } = popclip.options;
 
 if (!apiKey) {
   return "❌ 请配置 API Key";
@@ -14,7 +14,8 @@ function isChinese(str) {
 }
 
 const isZh = isChinese(text);
-const prompt = `你是翻译专家。将以下${isZh ? "简体中文翻译成英文" : "英文翻译成简体中文"}，只输出译文：\n\n${text}`;
+const promptTemplate = isZh ? promptZhToEn : promptEnToZh;
+const prompt = `${promptTemplate}\n\n${text}`;
 
 const res = await axios.post(apiBase, {
   model: model,
