@@ -15,6 +15,8 @@
 1. 前往 [Releases](https://github.com/myxiaoao/GLMTranslate.popclipext/releases) 下载最新版本的 `GLM_Translate.popclipextz`
 2. 双击下载的文件即可安装到 PopClip
 
+> **注意**：安装时会提示"不是 Pilotmoon Software 签署的"，这是 PopClip 对第三方插件的正常安全提示，点击"安装"即可。
+
 ### 方式二：手动打包
 
 1. 运行打包脚本：
