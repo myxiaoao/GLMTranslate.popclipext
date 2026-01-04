@@ -43,7 +43,7 @@
   "actions": [
     {
       "title": "Instant Translate",
-      "icon": "symbol:character.bubble",
+      "icon": "symbol:globe",
       "requirements": ["text"],
       "after": "show-result",
       "javascript file": "translate.js"
