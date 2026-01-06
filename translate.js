@@ -29,4 +29,10 @@ const res = await axios.post(apiBase, {
   timeout: parseInt(timeout) || 30000
 });
 
-return res.data.choices[0].message.content.trim();
+const result = res.data.choices[0].message.content.trim();
+// 如果结果包含换行，使用 large 样式显示
+if (result.includes('\n')) {
+  popclip.showText(result, { style: 'large' });
+  return null;
+}
+return result;
