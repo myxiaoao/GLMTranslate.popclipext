@@ -1,6 +1,17 @@
+<div align="center">
+
 # GLM Translate PopClip Extension
 
-使用智谱 GLM 模型进行简体中文与英文互译的 PopClip 插件。
+**使用智谱 GLM 模型进行简体中文与英文互译的 PopClip 插件**
+
+[![Release](https://github.com/myxiaoao/GLMTranslate.popclipext/actions/workflows/release.yml/badge.svg)](https://github.com/myxiaoao/GLMTranslate.popclipext/actions/workflows/release.yml)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![PopClip](https://img.shields.io/badge/PopClip-Extension-purple.svg)](https://www.popclip.app)
+[![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg)](https://www.apple.com/macos)
+
+---
+
+</div>
 
 ## 功能
 
